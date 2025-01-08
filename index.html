@@ -14,7 +14,7 @@
         <div id="middle">
             <div id="info">
                <div id="sprinter">Sprinter<img src="assets/img/ns_logo.png"></div>
-               <div id="treininterval">6 minuten</div>
+               <div id="treininterval">6 minutes</div>
                <div id="steden">
                 <div id="eindplaats">
                      Zwolle
@@ -35,3 +35,17 @@
     </div>
 </body>
 </html>
+
+<script>
+    const interval = setInterval(function() {
+        if (document.getElementById("time").innerHTML == "6 minuten") {
+
+            const now = new Date ();
+            const hour = now.getHours();
+            const minutes = now.getMinutes
+            document.getElementById("time").innerHTML = hours + ":" + minutes;
+
+        }else {
+            document.getElementById("time").innerHTML = "6 minutes";
+        }
+    },5000);
