@@ -40,6 +40,8 @@
     width: 480px;
     height: 25px;
     background-color: #041C95;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 #sprinter {
