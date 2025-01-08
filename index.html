@@ -33,19 +33,21 @@
                 <div id="spoortext"> spoor </div>
         </div>
     </div>
+
+    <script>
+        const interval = setInterval(function() {
+            if (document.getElementById("treininterval").innerHTML == "6 minutes") {
+    
+                const now = new Date ();
+                const hours = String(now.getHours()).padStart(2,"0");
+                const minutes = String(now.getHours()).padStart(2,"0");
+                document.getElementById("treininterval").innerHTML = hours + ":" + minutes;
+    
+            }else {
+                document.getElementById("treininterval").innerHTML = "6 minutes";
+            }
+        },5000);
+        </script>
+        
 </body>
 </html>
-
-<script>
-    const interval = setInterval(function() {
-        if (document.getElementById("time").innerHTML == "6 minuten") {
-
-            const now = new Date ();
-            const hour = now.getHours();
-            const minutes = now.getMinutes
-            document.getElementById("time").innerHTML = hours + ":" + minutes;
-
-        }else {
-            document.getElementById("time").innerHTML = "6 minutes";
-        }
-    },5000);
